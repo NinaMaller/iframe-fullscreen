@@ -56,10 +56,11 @@ var app = {
         i.addEventListener('load', this.iframeLoaded, false);
         //var ht= i.currentTarget.contentWindow.body.offsetHeight + 'px';
         //i.addEventListener('onload',this.resizeIframe,false);
-        i.setAttribute('height', 700);
+        i.setAttribute('height', "700");
         i.setAttribute('width', "100%");
         i.setAttribute('allowFullScreen', '');
-        document.body.appendChild(i);
+        document.getElementById('app1').appendChild(i);
+        //document.body.appendChild(i);
     },
 
     iframeLoaded : function (e) {
