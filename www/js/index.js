@@ -56,11 +56,16 @@ var app = {
         i.addEventListener('load', this.iframeLoaded, false);
         //var ht= i.currentTarget.contentWindow.body.offsetHeight + 'px';
         //i.addEventListener('onload',this.resizeIframe,false);
+        //var container = document.getElementById('main-body');
+        //console.log(container, container.offsetHeight);
+        //i.style.height = container.offsetHeight + 'px'; 
+        console.log(i.style.height);  
+        //i.setAttribute('height', container.offsetHeight);         
         i.setAttribute('height', "700");
         i.setAttribute('width', "100%");
         i.setAttribute('allowFullScreen', '');
-        document.getElementById('app1').appendChild(i);
-        //document.body.appendChild(i);
+        //document.getElementById('app1').appendChild(i);
+        document.body.appendChild(i);
     },
 
     iframeLoaded : function (e) {

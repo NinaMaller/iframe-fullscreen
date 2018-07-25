@@ -1,0 +1,19 @@
+{
+  "name": "io.cordova.hellocordova",
+  "version": "0.0.1",
+  "displayName": "HelloCordova",
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "7.0.0",
+    "cordova-ios": "~4.0.1",
+    "cordova-plugin-whitelist": "1"
+  }
+}
